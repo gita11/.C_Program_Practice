@@ -1,0 +1,38 @@
+Largest among two numbers:
+#include <stdio.h>
+int main()
+{
+int a,b,larg;
+printf("Enter two number: \n ");
+scanf("%d %d",&a,&b);
+larg = a>b?a:b;
+printf("largest number among given two numbers is: %d \n",larg);
+return 0;
+}
+
+// 2nd program
+
+Largest among three numbers:
+#include <stdio.h>
+int main()
+{
+int a,b,c,larg;
+printf("Enter three number: \n ");
+scanf("%d %d %d",&a,&b,&c);
+larg = a>b?a>c?a:c:b>c?b:c;
+printf("largest number among given three numbers is: %d \n",larg);
+return 0;
+}
+
+//3rd program
+Largest among four numbers:
+#include <stdio.h>
+int main()
+{
+int a,b,c,d,larg;
+printf("Enter four number: \n ");
+scanf("%d %d %d %d",&a,&b,&c,&d);
+larg = ( (a>b && a>c && a>d) ? a : (b>c && b>d) ? b : (c>d)? c : d );
+printf("largest number among given four numbers is: %d \n",larg);
+return 0;
+}
