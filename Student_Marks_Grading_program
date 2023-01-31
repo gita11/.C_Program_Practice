@@ -1,0 +1,40 @@
+//Grading system program
+#include<stdio.h>
+int main()
+{
+	int m,cp,e,c,b;
+	float a,p;
+	printf("enter marks obtained in MATHS out of 100\n");
+	scanf("%d",&m);
+	printf("enter marks obtained in CPPS out of 100\n");
+	scanf("%d",&cp);
+	printf("enter marks obtained in ENGLISH out of 100\n");
+	scanf("%d",&e);
+	printf("enter marks obtained in CHEMISTRY out of 100\n");
+	scanf("%d",&c);
+	printf("enter marks obtained in ELECTRICAL out of 100\n");
+	scanf("%d",&b);
+	a=m+cp+e+c+b;
+	p=a/5;
+	printf("total marks obtained is %f\npercentage obtained is %f\n",a,p);
+	if(p>75)
+	{
+		printf("DISTINCTION\n");
+	}
+	else if(p>=60&&p<75)
+	{
+		printf("FIRST DIVISION\n");
+	}
+	else if(p>=50&&p<60)
+	{
+		printf("SECOND DIVISION\n");
+	}
+	else if(p>=40&&p<50)
+	{
+		printf("THIRD DIVISION\n");
+	}
+	else
+	{
+		printf("FAIL\n");
+	}
+}
