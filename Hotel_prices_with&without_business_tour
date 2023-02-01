@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+int no_people,no_night,is_business;
+float cost,total_cost;
+printf("enter no of people staying in hotel=\n");
+scanf("%d",&no_people);
+printf("enter no of night staying in hotel=\n");
+scanf("%d",&no_night);
+printf("press (1)for bussiness tour,else press any number=\n");
+scanf("%d",&is_business);
+if(no_people<=2)
+cost=no_night*2500;
+else if(no_people==3)
+cost=no_night*3500;
+else if(no_people==4)
+cost=no_night*4500;
+else if(no_people>4)
+cost=(4500+(no_people-4)*1000)*no_night;
+if(is_business==1)
+{
+total_cost=cost-(cost*20/100);
+printf("total cost payable after getting discount=%f\n",total_cost);
+}
+else
+{
+printf("total cost payable is=%f\n",cost);
+}
+return 0;
+}
