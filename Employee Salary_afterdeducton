@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+float basic_pay,hra,ta,total_salary,professional_tax,salary_payable;
+printf("Enter employee basic pay=");
+scanf("%f",&basic_pay);
+if(basic_pay<0)
+{
+printf("Basic pay can't be nagative.");
+}
+else
+{
+hra=basic_pay*0.1;
+ta=basic_pay*0.05;
+total_salary=basic_pay+hra+ta;
+professional_tax=total_salary*0.02;
+salary_payable=total_salary-professional_tax;
+printf("HRA is=%f\n",hra);
+printf("TA is=%f\n",ta);
+printf("Payable Professional tax is=%f\n",professional_tax);
+printf("Salary payable is=%f\n",salary_payable);
+}
+return 0;
+}
